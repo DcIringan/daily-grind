@@ -35,7 +35,7 @@ switch(today){
   case 1:
     today = "Monday";
 
-        coffee = {
+    coffee = {
         name: "Bubble Tea",
         pic: "images/bubble-tea.jpg",
         alt: "a picture of a bubble tea",
