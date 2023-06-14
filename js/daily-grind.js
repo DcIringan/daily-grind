@@ -1,5 +1,4 @@
 /*
-<<<<<<< HEAD
    Here are the main things we'll likely need to store for each coffee:
 
 
@@ -9,16 +8,6 @@
    alt - the alt tag identifying the coffee
    day - the day of the week
    desc- the description of the coffee
-=======
-
-    name - name of the coffee
-    pic - the picture of the coffee
-    color - color associated to the coffee
-    alt - the alt tag identifying the coffee
-    day - the day of the week
-    desc - description of the coffee
-
->>>>>>> 064195d692effb2037ce32570e05617f26a23587
 */
 
 
@@ -27,7 +16,6 @@ let myDate = new Date();
 
 let today = myDate.getDay();
 
-<<<<<<< HEAD
 
 let coffee = "";
 
@@ -51,22 +39,6 @@ return `
            <strong class="feature">${coffee.day}'s' Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>
 `;
  }
-=======
-let coffee = "";
-
-function coffeeTemplate(coffee){
-
-    return`
-  
-    <p>
-    <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
-    <strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>
-    
-   `; 
-  
-  }
-
->>>>>>> 064195d692effb2037ce32570e05617f26a23587
 
 
 //today = 3;
@@ -80,26 +52,6 @@ today = parseInt(today);
 
 switch(today){
 
-<<<<<<< HEAD
-=======
-  case 1:
-    today = "Monday";
-
-    coffee = {
-        name: "Bubble Tea",
-        pic: "images/bubble-tea.jpg",
-        alt: "a picture of a bubble tea",
-        color: "pink",
-        day: "Monday",
-        desc: `I love me some bubble tea!`
-    };
-    
-    break;
-    
-    case 2:
-         today = "Taco Tuesdays";
-    break;
->>>>>>> 064195d692effb2037ce32570e05617f26a23587
 
    case 0:
        today = "Sunday";
@@ -228,15 +180,8 @@ switch(today){
 
    break;
    default:
-<<<<<<< HEAD
        today = "Day is Unknown";
 }
-=======
-      today = "Day is unknown";
-}
-
-document.getElementById("coffee-cup").innerHTML  = coffeeTemplate(coffee);
->>>>>>> 064195d692effb2037ce32570e05617f26a23587
 
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
