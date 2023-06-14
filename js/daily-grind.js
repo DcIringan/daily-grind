@@ -1,7 +1,6 @@
 /*
    Here are the main things we'll likely need to store for each coffee:
 
-
    name- the name of the coffee
    pic - the picture of the coffee
    color - the color associated with the coffee
@@ -9,16 +8,11 @@
    day - the day of the week
    desc- the description of the coffee
 */
-
-
 let myDate = new Date();
-
 
 let today = myDate.getDay();
 
-
 let coffee = "";
-
 
 //use location object to access querystring (address bar)
 const queryString = window.location.search;   
@@ -38,7 +32,7 @@ return `
     <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
            <strong class="feature">${coffee.day}'s' Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>
 `;
- }
+}
 
 
 //today = 3;
